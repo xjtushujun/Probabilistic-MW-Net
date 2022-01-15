@@ -6,7 +6,7 @@ TNNLS2021: A Probabilistic Formulation for Meta-Weight-Net (Official Pytorch imp
 
 
 This is the code for the paper:
-A Probabilistic Formulation for Meta-Weight-Net. Qian Zhao , Jun Shu, Xiang Yuan, Ziming Liu, and Deyu Meng. [Official site](https://ieeexplore.ieee.org/abstract/document/9525050/)  [Copy Vervision]()
+A Probabilistic Formulation for Meta-Weight-Net. Qian Zhao , Jun Shu, Xiang Yuan, Ziming Liu, and Deyu Meng. [Official site](https://ieeexplore.ieee.org/abstract/document/9525050/) ,  [Copy Vervision](https://github.com/xjtushujun/Probabilistic-MW-Net-PMW-Net-/blob/main/A_Probabilistic_Formulation_for_Meta-Weight-Net.pdf)
 
 
 If you find this code useful in your research then please cite  
