@@ -256,11 +256,13 @@ class CIFAR10(data.Dataset):
                     model_name = './cifar{}_labeler'.format(num_classes)
                     net.load_state_dict(torch.load(model_name))
                     net.eval()
-                else:
-                    assert False, "Invalid corruption type '{}' given. Must be in {'unif', 'flip', 'hierarchical'}".format(corruption_type)
 
                 np.random.seed(seed)
-                if corruption_type == 'clabels':
+                if corruption_type == 'open_set_cifar100':
+                    self.train_data = torch.load('./%d/img_train_image.npy' % (int(100 * self.corruption_prob)))
+                elif corruption_type == 'open_set_imagenet':
+                    self.train_data = torch.load('./%d/cimg_train_image.npy' % (int(100 * self.corruption_prob)))
+                elif corruption_type == 'clabels':
                     mean = [x / 255 for x in [125.3, 123.0, 113.9]]
                     std = [x / 255 for x in [63.0, 62.1, 66.7]]
 
